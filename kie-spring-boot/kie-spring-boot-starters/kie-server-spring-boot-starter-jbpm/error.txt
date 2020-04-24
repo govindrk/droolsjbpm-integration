@@ -1,0 +1,50 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.1.RELEASE)
+
+2020-04-24 19:34:47.572  INFO 11968 --- [  restartedMain] c.m.java.springboot.jbpm.Application     : Starting Application on DESKTOP-O0FHS1K with PID 11968 (C:\poc\spring-jbpm\target\classes started by govind in C:\poc\spring-jbpm)
+2020-04-24 19:34:47.574  INFO 11968 --- [  restartedMain] c.m.java.springboot.jbpm.Application     : No active profile set, falling back to default profiles: default
+2020-04-24 19:34:47.608  INFO 11968 --- [  restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\govind\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/govind/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/govind/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/govind/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/govind/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/govind/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/govind/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-04-24 19:34:47.609  INFO 11968 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-24 19:34:47.609  INFO 11968 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-24 19:34:48.133  INFO 11968 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-24 19:34:48.149  INFO 11968 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+2020-04-24 19:34:48.380  INFO 11968 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-24 19:34:48.588  INFO 11968 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-24 19:34:48.602  INFO 11968 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-24 19:34:48.602  INFO 11968 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-04-24 19:34:48.734  INFO 11968 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-24 19:34:48.734  INFO 11968 --- [  restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1125 ms
+2020-04-24 19:34:48.802  WARN 11968 --- [  restartedMain] com.arjuna.ats.common                    : ARJUNA048002: Could not find configuration file, URL was: null
+2020-04-24 19:34:48.821  INFO 11968 --- [  restartedMain] o.d.p.api.TransactionManagerFactory      : Using org.kie.spring.persistence.KieSpringTransactionManagerFactory@79868a67
+2020-04-24 19:34:48.831  INFO 11968 --- [  restartedMain] com.arjuna.ats.jbossatx                  : ARJUNA032010: JBossTS Recovery Service (tag: unknown) - JBoss Inc.
+2020-04-24 19:34:48.847  INFO 11968 --- [  restartedMain] com.arjuna.ats.jbossatx                  : ARJUNA032013: Starting transaction recovery manager
+2020-04-24 19:34:48.860  WARN 11968 --- [  restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/jbpm/springboot/autoconfigure/JBPMAutoConfiguration.class]: Unsatisfied dependency expressed through method 'entityManagerFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/jbpm/springboot/datasources/JBPMDataSourceAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'dataSourceProperties': Could not bind properties to 'DataSourceProperties' : prefix=spring.datasource, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.datasource.type' to java.lang.Class<javax.sql.DataSource>
+2020-04-24 19:34:48.861  INFO 11968 --- [  restartedMain] com.arjuna.ats.jbossatx                  : ARJUNA032014: Stopping transaction recovery manager
+2020-04-24 19:34:48.863  INFO 11968 --- [  restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-04-24 19:34:48.875  INFO 11968 --- [  restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-24 19:34:48.877 ERROR 11968 --- [  restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.datasource.type' to java.lang.Class<javax.sql.DataSource>:
+
+    Property: spring.datasource.type
+    Value: org.apache.tomcat.jdbc.pool.XADataSource
+    Origin: class path resource [application.properties]:10:24
+    Reason: No converter found capable of converting from type [java.lang.String] to type [java.lang.Class<javax.sql.DataSource>]
+
+Action:
+
+Update your application's configuration
